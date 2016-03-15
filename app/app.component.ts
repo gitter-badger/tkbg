@@ -1,9 +1,10 @@
 import { Component }       from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import { DashboardComponent } from './partials/dashboard/components/dashboard.component';
-import { HeroService }     from './partials/heroes/services/hero.service';
-import { HeroesComponent } from './partials/heroes/components/heroes.component';
-import { HeroDetailComponent } from './partials/heroes/components/hero-detail.component';
+import { UserService }     from './partials/users/services/user.service';
+import { UsersComponent } from './partials/users/components/users.component';
+import { UserDetailComponent } from './partials/users/components/user-detail.component';
+import { CategoryService }     from './partials/categories/services/category.service';
 import { CategoryDetailComponent } from './partials/categories/components/category-detail.component';
 import { CategoriesComponent } from './partials/categories/components/categories.component';
 
@@ -14,7 +15,8 @@ import { CategoriesComponent } from './partials/categories/components/categories
 	directives: [ROUTER_DIRECTIVES],
 	providers: [
 		ROUTER_PROVIDERS,
-		HeroService
+		UserService,
+		CategoryService
 	]
 })
 
@@ -25,20 +27,20 @@ import { CategoriesComponent } from './partials/categories/components/categories
 		component: DashboardComponent,
 		useAsDefault: true
 	},{
-		path: '/heroes',
-		name: 'Heroes',
-		component: HeroesComponent
+		path: '/users',
+		name: 'Users',
+		component: UsersComponent
 	}, {
-		path: '/hero/:id',
-		name: 'HeroDetail',
-		component: HeroDetailComponent
+		path: '/user/:id',
+		name: 'UserDetail',
+		component: UserDetailComponent
 	}, {
 		path: '/categories',
 		name: 'Categories',
 		component: CategoriesComponent
 	}, {
 		path: '/category/:id',
-		name: 'Category',
+		name: 'CategoryDetail',
 		component: CategoryDetailComponent
 	}
 ])

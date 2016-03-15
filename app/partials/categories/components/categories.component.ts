@@ -6,8 +6,8 @@ import {OnInit} from 'angular2/core';
 import { Router } from 'angular2/router';
 
 @Component({
-    selector: 'my-categories',
-    templateUrl: 'app/partials/categories/views/categories.component.html',
+	selector: 'my-categories',
+	templateUrl: 'app/partials/categories/views/categories.component.html',
 	styleUrls: ['app/partials/categories/css/categories.component.css'],
 	directives: [CategoryDetailComponent]
 })
