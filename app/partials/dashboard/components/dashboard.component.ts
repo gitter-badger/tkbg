@@ -1,12 +1,12 @@
 import { Component, OnInit } from 'angular2/core';
-import { Hero } from '../heroes/hero';
-import { HeroService } from '../heroes/hero.service';
+import { Hero } from '../../heroes/components/hero.component';
+import { HeroService } from '../../heroes/services/hero.service';
 import { Router } from 'angular2/router';
 
 @Component({
   selector: 'my-dashboard',
-  templateUrl: 'app/partials/dashboard/dashboard.html',
-  styleUrls: ['app/partials/dashboard/dashboard.css']
+  templateUrl: 'app/partials/dashboard/views/dashboard.component.html',
+  styleUrls: ['app/partials/dashboard/css/dashboard.component.css']
 })
 
 export class DashboardComponent implements OnInit {

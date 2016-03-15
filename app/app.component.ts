@@ -1,9 +1,11 @@
 import { Component }       from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import { HeroService }     from './partials/heroes/hero.service';
-import { HeroesComponent } from './partials/heroes/heroes.component';
-import { DashboardComponent } from './partials/dashboard/dashboard.component';
-import { HeroDetailComponent } from './partials/heroes/hero-detail.component';
+import { DashboardComponent } from './partials/dashboard/components/dashboard.component';
+import { HeroService }     from './partials/heroes/services/hero.service';
+import { HeroesComponent } from './partials/heroes/components/heroes.component';
+import { HeroDetailComponent } from './partials/heroes/components/hero-detail.component';
+import { CategoryDetailComponent } from './partials/categories/components/category-detail.component';
+import { CategoriesComponent } from './partials/categories/components/categories.component';
 
 @Component({
 	selector: 'my-app',
@@ -18,21 +20,29 @@ import { HeroDetailComponent } from './partials/heroes/hero-detail.component';
 
 @RouteConfig([
 	{
-		path: '/heroes',
-		name: 'Heroes',
-		component: HeroesComponent
-	},{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: DashboardComponent,
 		useAsDefault: true
 	},{
-		path: '/detail/:id',
+		path: '/heroes',
+		name: 'Heroes',
+		component: HeroesComponent
+	}, {
+		path: '/hero/:id',
 		name: 'HeroDetail',
 		component: HeroDetailComponent
+	}, {
+		path: '/categories',
+		name: 'Categories',
+		component: CategoriesComponent
+	}, {
+		path: '/category/:id',
+		name: 'Category',
+		component: CategoryDetailComponent
 	}
 ])
 
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'TKBG - O Jogo da Base de Conhecimento';
 }
