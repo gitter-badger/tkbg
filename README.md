@@ -1,4 +1,6 @@
 # ng2-bootstrap [![npm version](https://badge.fury.io/js/ng2-bootstrap.svg)](http://badge.fury.io/js/ng2-bootstrap) [![npm downloads](https://img.shields.io/npm/dm/ng2-bootstrap.svg)](https://npmjs.org/ng2-bootstrap)
+
+[![Join the chat at https://gitter.im/vinagreti/tkbg](https://badges.gitter.im/vinagreti/tkbg.svg)](https://gitter.im/vinagreti/tkbg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Native Angular2 directives for Bootstrap, works with Bootstrap 3 and 4-alfa
 
 
