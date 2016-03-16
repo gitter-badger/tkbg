@@ -1,14 +1,14 @@
 import {Component} from 'angular2/core';
-import {User} from './user.component';
-import {UserDetailComponent} from './user-detail.component';
-import {UserService} from '../services/user.service';
+import {User} from '../../interfaces/user.component';
+import {UserDetailComponent} from '../detail/user-detail.component';
+import {UserService} from '../../services/user.service';
 import {OnInit} from 'angular2/core';
 import {Router} from 'angular2/router';
 
 @Component({
     selector: 'my-users',
-    templateUrl: 'app/partials/users/views/users.component.html',
-    styleUrls: ['app/partials/users/css/users.component.css'],
+    templateUrl: 'app/partials/users/components/list/users.component.html',
+    styleUrls: ['app/partials/users/components/list/users.component.css'],
     directives: [UserDetailComponent]
 })
 

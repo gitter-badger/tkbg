@@ -1,12 +1,12 @@
 import {Component, OnInit} from 'angular2/core';
 import {RouteParams} from 'angular2/router';
-import {Category} from './category.component';
-import {CategoryService} from '../services/category.service';
+import {Category} from '../../interfaces/category.component';
+import {CategoryService} from '../../services/category.service';
 
 @Component({
     selector: 'my-category-detail',
-    templateUrl: 'app/partials/categories/views/category-detail.component.html',
-    styleUrls: ['app/partials/categories/css/category-detail.component.css'],
+    templateUrl: 'app/partials/categories/components/detail/category-detail.component.html',
+    styleUrls: ['app/partials/categories/components/detail/category-detail.component.css'],
     inputs: ['category']
 })
 

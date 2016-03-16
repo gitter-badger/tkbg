@@ -1,4 +1,4 @@
-import {User} from '../components/user.component';
+import {User} from '../interfaces/user.component';
 
 export var USERS: User[] = [
     {"id": 11, "name": "Mr. Nice"},

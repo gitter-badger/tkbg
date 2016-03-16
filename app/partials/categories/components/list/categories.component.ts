@@ -1,14 +1,14 @@
 import {Component} from 'angular2/core';
-import {Category} from './category.component';
-import {CategoryDetailComponent} from './category-detail.component';
-import {CategoryService} from '../services/category.service';
+import {Category} from '../../interfaces/category.component';
+import {CategoryDetailComponent} from '../detail/category-detail.component';
+import {CategoryService} from '../../services/category.service';
 import {OnInit} from 'angular2/core';
 import { Router } from 'angular2/router';
 
 @Component({
 	selector: 'my-categories',
-	templateUrl: 'app/partials/categories/views/categories.component.html',
-	styleUrls: ['app/partials/categories/css/categories.component.css'],
+	templateUrl: 'app/partials/categories/components/list/categories.component.html',
+	styleUrls: ['app/partials/categories/components/list/categories.component.css'],
 	directives: [CategoryDetailComponent]
 })
 
